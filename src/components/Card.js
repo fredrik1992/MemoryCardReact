@@ -5,15 +5,22 @@ function Card (props){
    
     return(
 
-        <div className="card">
+        <div id = {props.cardId}  onClick = {() => {
+            if (props.isDisabled){
+                console.log("is disabled")
+            }else{
+                props.compareCards(props.cardId)    
+            }
             
-           <img onClick = {props.compareCards}  className="cardImage" src = {props.backGroundCardImage} />
+        }
+        } className="card">
+            
+            <img   className="cardImage" src = {props.activeCardImage} />
+            
+           
            
 
-    <button onClick = {() => {
-        props.compareCards(props.cardId)
-    }
-    }></button>        
+           
     </div>
     
     )

@@ -1,4 +1,18 @@
+.wrapper{
+  background-color: gray;
+  height: 900px;
+}
 
+.gameWindow{
+  position: relative;
+  top: 250px;
+  width: 100%;
+  background-color: green;
+  border: brown solid 2px;
+  margin-left: 2%;
+  margin-right: 10%;
+  
+}
 
 .card{
   height: 50px;
@@ -9,6 +23,7 @@
   height: 100px;
   width: 50px;
 }
+
 #cardWindow{
   position: relative;
   display: flex;
@@ -18,4 +33,8 @@
   left: 10%;
   
 
+}
+
+#restartGameButton{
+  margin-left: 50px;
 }

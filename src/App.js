@@ -8,7 +8,16 @@ function App() {
   
   return (
     <div className="App">
-      <CardHolder />
+      <div className = "wrapper">
+      <div className = "background_table">
+          <CardHolder />
+        
+      </div>
+      </div>
+        
+      
+      
+      
     </div>
   );
 }
